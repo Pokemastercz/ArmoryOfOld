@@ -13,7 +13,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
-    public static final Block HANDGUN_AMMO_CRATE = registerBlock("handgun_ammo_crate",
+    public static final Block SMALL_AMMO_CRATE = registerBlock("small_ammo_crate",
             new Block(AbstractBlock.Settings.create().strength(0.5f)
                     .requiresTool().sounds(BlockSoundGroup.STONE)));
 
@@ -32,7 +32,7 @@ public class ModBlocks {
         ArmoryOfFun.LOGGER.info("Registering Mod Blocks for " + ArmoryOfFun.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
-            entries.add(ModBlocks.HANDGUN_AMMO_CRATE);
+            entries.add(ModBlocks.SMALL_AMMO_CRATE);
         });
     }
 }
