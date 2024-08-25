@@ -10,9 +10,9 @@ import net.minecraft.util.Identifier;
 
 
 public class ModItems {
-    public static final Item HANDGUN_AMMO = registerItem("handgun_ammo", new Item(new Item.Settings()));
-    public static final Item RIFLE_AMMO = registerItem("rifle_ammo", new Item(new Item.Settings()));
-    public static final Item HANDGUN_AMMO_BOX = registerItem("handgun_ammo_box", new Item(new Item.Settings()));
+    public static final Item SMALL_AMMO = registerItem("small_ammo", new Item(new Item.Settings()));
+    public static final Item LARGER_AMMO = registerItem("larger_ammo", new Item(new Item.Settings()));
+    public static final Item SMALL_AMMO_BOX = registerItem("small_ammo_box", new Item(new Item.Settings()));
 
 
     private static Item registerItem(String name, Item item) {
@@ -23,9 +23,9 @@ public class ModItems {
         ArmoryOfFun.LOGGER.info("Registering Mod Items for" + ArmoryOfFun.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
-            entries.add(HANDGUN_AMMO);
-            entries.add(RIFLE_AMMO);
-            entries.add(HANDGUN_AMMO_BOX);
+            entries.add(SMALL_AMMO);
+            entries.add(LARGER_AMMO);
+            entries.add(SMALL_AMMO_BOX);
         });
     }
 }

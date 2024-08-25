@@ -1,6 +1,7 @@
 package net.capitano.mod;
 
 import net.capitano.mod.block.ModBlocks;
+import net.capitano.mod.item.ModItemGroups;
 import net.capitano.mod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -13,6 +14,8 @@ public class ArmoryOfFun implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        ModItemGroups.registerItemGroups();
+
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
     }

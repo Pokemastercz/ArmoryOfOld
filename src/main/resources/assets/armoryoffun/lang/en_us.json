@@ -1,6 +1,7 @@
 {
-  "item.armoryoffun.handgun_ammo": "Handgun Round",
-  "item.armoryoffun.rifle_ammo": "Rifle Round",
-  "item.armoryoffun.handgun_ammo_box": "Handgun Ammo box",
-  "block.armoryoffun.handgun_ammo_crate": "Crate of Handgun Ammo"
+  "itemgroup.armoryoffun.armory_of_fun_items": "Armory of fun",
+  "item.armoryoffun.small_ammo": "Small Round",
+  "item.armoryoffun.larger_ammo": "Larger Round",
+  "item.armoryoffun.small_ammo_box": "Box Of Small Ammo",
+  "block.armoryoffun.small_ammo_crate": "Crate Of Small Ammo"
 }
