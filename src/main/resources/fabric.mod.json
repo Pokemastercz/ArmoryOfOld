@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "armory-of-fun",
+  "version": "${version}",
+  "name": "Armory of fun",
+  "description": "A simple war mod adding guns, vehicles and machines",
+  "authors": [
+    "Capitano",
+    "TheLocalCannoneer",
+    "SomebodyElse",
+    "KaBOOM",
+    "DuctectiveCZ",
+    "Coffee",
+    "My computer"
+  ],
+  "contact": {
+    "homepage": "https://tinkerersparadise.systeme.io/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/armory-of-fun/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.capitano.mod.ArmoryOfFun"
+    ],
+    "fabric-datagen": [
+      "net.capitano.mod.ArmoryOfFunDataGenerator"
+    ],
+    "client": [
+      "net.capitano.mod.ArmoryOfFunClient"
+    ]
+  },
+  "mixins": [
+    "armory-of-fun.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.2",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

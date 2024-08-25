@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "armoryoffun:item/handgun_ammo_box"
+  }
+}

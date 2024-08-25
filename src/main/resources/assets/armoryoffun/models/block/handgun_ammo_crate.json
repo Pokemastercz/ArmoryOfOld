@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "armoryoffun:block/handgun_ammo_crate"
+  }
+}
